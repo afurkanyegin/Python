@@ -1,0 +1,7 @@
+print("Welcome to the Letter Counter App")
+name= input("What is your name: ").title()
+print(f"Welcome {name}")
+message=input("Please enter your message: ")
+letter = input("Which letter :")
+letter_number_result=message.lower().count(f"{letter.lower()}")
+print(f"Your message has {letter_number_result} {letter} in it")
