@@ -1,0 +1,26 @@
+{% extends 'todoapp/base.html' %}
+
+
+{% block title %}
+    About Page
+{% endblock title %}
+    
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid ">
+    <div class="container">
+      <h1 class="display-4"><center>To-Do List</center></h1>
+      <p class="lead"><center>This is a To-Do List for Python Django Development.</center></p>
+      <p class="lead"><center>You can use this TO-DO list for your Django projects.</center></p>
+      <p class="lead"><center>Just follow the list.</center></p>
+      <p class="lead"><center>If you follow this list you will not make mistakes.</center></p>
+      <p class="lead"><center>You can update anything.</center></p>
+      <br><br>
+      <div class="text-center">
+        <a type="button" href="{% url 'create' %}" class="btn btn-outline-success">Create New To-Do </a>
+      </div>
+      
+    </div>
+</div>
+{% endblock content %}
+    
